@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace Data
 {
     public class Class1
-    {
+    { 
     }
 }
