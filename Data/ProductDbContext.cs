@@ -15,6 +15,7 @@ namespace Data
         {
             Database.SetInitializer<ProductDbContext>(
                 new CreateDatabaseIfNotExists<ProductDbContext>());
+            Database.Initialize(false);
         }
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Loja> Lojas { get; set; }
