@@ -21,5 +21,10 @@ namespace Domain
         [Range(-999999999999.99, 999999999999.99)]
         [Required]
         public decimal Valor { get; set; }
+
+        [ForeignKey("Loja")]
+        public int LojaId { get; set; }
+
+        public virtual Loja Loja { get; set; }
     }
 }
