@@ -39,5 +39,10 @@ namespace WinForms
             context.Produtos.Add(produto);
             context.SaveChanges();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Loja loja = context.Lojas.Find(3);
+        }
     }
 }
